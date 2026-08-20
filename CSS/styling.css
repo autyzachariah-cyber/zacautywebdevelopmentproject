@@ -1,0 +1,45 @@
+/*css file*/
+
+h1{color: darkblue;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+ul{list-style-type: none; 
+    margin: 20px; 
+    padding: 20px;
+    width: 200px;
+    background-color: antiquewhite;
+}
+
+a {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color:crimson
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+  
+    
+
+/*change the link and background colour*/
+li a:hover{
+    background-color: cyan;
+    color: blanchedalmond;
+}
+
+table, th, tr,td {
+    border: 1px solid;
+}
