@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 
-<header>
+<head>
     <title>Help/Support</title>
+    <script src="../javascript/support_script.js"></script>
     <link rel="stylesheet" href="../CSS/styling.css"/>
+    <link rel="stylesheet" href="../CSS/mobile_view.css" media="screen and (max-width:480px)"/>
+    <!--https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name/viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+    
 
+    <h1>Help/Support</h1>
+    <nav>
+        <ul><a href="../HTML/Dashboard.html">Dashboard</a></ul>
+        <ul><a href="../HTML/student_details.html">Student Details</a></ul>
+        <ul><a href="../HTML/enrolments.html">Enrolments</a></ul>
+        <ul><a href="../HTML/help_support.html">Help/Support</a></ul>
+    </nav>
 
+</head>
+<body>
 <form id="testform" action="">
     <fieldset>
     <label for="name">Enter your Name</label>
@@ -17,6 +31,7 @@
     <fieldset>
         <label for="state">State:</label>
         <select id="state" name="state">
+            <option value=""></option>
             <option value="VIC">VIC</option>
             <option value="NSW">NSW</option>
             <option value="QLD">QLD</option>
@@ -29,24 +44,18 @@
     <br/>
     <fieldset>
         <legend>What is the nature of the support you need? Check any that apply:</legend>
-        <input type="checkbox" id="personal" name="personal" value="personal">
+        <input type="checkbox" id="support" name="personal" value="personal">
         <label for="personal">Personal</label>
-        <input type="checkbox" id="financial" name="financial" value="financial">
+        <input type="checkbox" id="support" name="financial" value="financial">
         <label for="financial">Financial</label>
-        <input type="checkbox" id="educational" name="educational" value="educational">
+        <input type="checkbox" id="support" name="educational" value="educational">
         <label for="educational">Educational</label>
-        <input type="checkbox" id="enrolment" name="enrolment" value="enrolment">
+        <input type="checkbox" id="support" name="enrolment" value="enrolment">
         <label for="enrolment">Enrolment</label>
     </fieldset>
-</form>
 
-</header>
-<body>
-    <h1>Help/Support</h1>
-    <nav>
-        <ul><a href="../HTML/Dashboard.html">Dashboard</a></ul>
-        <ul><a href="../HTML/student_details.html">Student Details</a></ul>
-        <ul><a href="../HTML/enrolments.html">Enrolments</a></ul>
-        <ul><a href="../HTML/help_support.html">Help/Support</a></ul>
-    </nav>
+    <p>
+        <input type="submit" value="submit">
+    </p>
+</form>
 </body>

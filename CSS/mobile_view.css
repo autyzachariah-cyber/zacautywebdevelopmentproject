@@ -1,0 +1,17 @@
+/*For mobile users*/
+
+@media (max-width:480px)
+{
+
+}
+
+header h1{
+    display: flex;
+    grid-area: title;
+    font-size: 20px;
+    margin: 10px -10px 0px 0px;
+    align-items: center;
+    width: 100%
+}
+
+
