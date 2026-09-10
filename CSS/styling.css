@@ -1,5 +1,9 @@
 /*css file*/
 
+.menu-checkbox{
+    display: none;
+}
+
 h1{color: darkblue;
     text-align: center;
 }
