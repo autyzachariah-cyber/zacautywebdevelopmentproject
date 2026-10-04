@@ -1,5 +1,11 @@
 /*css file*/
 
+#logo{
+    width: 10%;
+    height: 10%;
+    position: relative;
+}
+
 .menu-checkbox{
     display: none;
 }
@@ -47,3 +53,9 @@ li a:hover{
 table, th, tr,td {
     border: 1px solid;
 }
+
+/* https://learn.shayhowe.com/html-css/positioning-content/ */
+.menu{
+    float: left;
+}
+

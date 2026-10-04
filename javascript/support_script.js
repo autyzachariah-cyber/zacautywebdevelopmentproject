@@ -15,7 +15,7 @@ function validate()
     //For the name validation//
     var errmsg = "";
     var result = true;
-    const pattern = /^[a-zA-Z]/;
+    const pattern = /^[a-zA-Z]+$/;
 
 
 
@@ -57,6 +57,8 @@ function validate()
     }
 
     return result;
+
+    
 
 
 }

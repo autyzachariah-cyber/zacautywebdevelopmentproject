@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Dashboard</title>
+    <title>Enrolments</title>
     <link rel="stylesheet" href="../CSS/styling.css"/>
     <link rel="stylesheet" href="../CSS/mobile_view.css" media="screen and (max-width:480px)"/>
     <!--https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name/viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+    <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
     <h1>Enrolments</h1>
+    <div><img src="../Images/chisholm_logo.jpg" id="logo"/></div>
     <input class="menu-checkbox" type="checkbox" id="menu-checkbox"/>
     <label class="menu-burger" for="menu-checkbox">
         <span class="hamburger"></span>
@@ -16,13 +18,35 @@
         <ul><a href="../HTML/student_details.html">Student Details</a></ul>
         <ul><a href="../HTML/enrolments.html">Enrolments</a></ul>
         <ul><a href="../HTML/help_support.html">Help/Support</a></ul>
+        <ul><a href="../HTML/results.html">Results</a></ul>
     </nav>
 </head>
 
 <body>
+<form id="enrolment_form" action="">
+    <fieldset>
+    <label for="name">Enter your Name</label>
+    <input type="text" id="name" name="name" placeholder="name contain alphabet only" />
+    </br>
+    <label for="birth_date">Date of Birth</label>
+    <input type="text" id="name" name="name" placeholder="Enter Date of Birth"/>
+    </br>
+    <label for="email">Email Address</label>
+    <input type="text" id="email" name="email" placeholder="Enter Email Address here" />
+    </br>
+    <label for="address">Home Address</label>
+    <input type="text" id="address" name="address" placeholder="Enter only letters and numbers"/>
+    </br>
+    <label for="phone">Phone Number</label>
+    <input type="text" id="phone" name="phone" placeholder="Phone has numbers only"/>
+    </fieldset>
 
+    <p>
+        <input type="submit" value="submit" id="enrolment_submission">
+    </p>
+</form>
     
 
-    <p>Hi this is just a placeholder so don't mind it too much</p>
+    
 
 </body>
