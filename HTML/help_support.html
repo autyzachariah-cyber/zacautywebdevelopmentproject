@@ -4,6 +4,7 @@
     <title>Help/Support</title>
     <script src="../javascript/support_script.js"></script>
     <link rel="stylesheet" href="../CSS/styling.css"/>
+    <link rel="stylesheet" href="../CSS/support.css">
     <link rel="stylesheet" href="../CSS/mobile_view.css" media="screen and (max-width:480px)"/>
     <!--https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name/viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
@@ -28,11 +29,12 @@
 <form id="testform" action="">
     <fieldset>
     <label for="name">Enter your Name</label>
-    <input type="text" id="name" name="name" placeholder="name contain alphabet only">
+    <input type="text" id="name" name="name" placeholder="name contain alphabet only" onmouseover="showText()" onmouseout="hideText()"/>
+    <span id="nameTip" class="tooltip"></span>
     <br/>
     <label for="gender">Gender</label>
-    <input type="radio" id="gender" name="name">Female</input>
-    <input type="radio" id="gender" name="name">Male</input>
+    <input type="radio" id="Female" name="gender">Female</input>
+    <input type="radio" id="Male" name="gender">Male</input>
     </fieldset>
     <fieldset>
         <label for="state">State:</label>
@@ -50,13 +52,13 @@
     <br/>
     <fieldset>
         <legend>What is the nature of the support you need? Check any that apply:</legend>
-        <input type="checkbox" id="support" name="personal" value="personal">
+        <input type="checkbox" id="personal" name="personal" value="personal" class="support">
         <label for="personal">Personal</label>
-        <input type="checkbox" id="support" name="financial" value="financial">
+        <input type="checkbox" id="financial" name="financial" value="financial" class="support">
         <label for="financial">Financial</label>
-        <input type="checkbox" id="support" name="educational" value="educational">
+        <input type="checkbox" id="educational" name="educational" value="educational" class="support">
         <label for="educational">Educational</label>
-        <input type="checkbox" id="support" name="enrolment" value="enrolment">
+        <input type="checkbox" id="enrolment" name="enrolment" value="enrolment" class="support">
         <label for="enrolment">Enrolment</label>
     </fieldset>
 
